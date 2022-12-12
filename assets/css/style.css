@@ -1,9 +1,11 @@
 body {
   background-color: aquamarine;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
 }
 a {
-  font-size: 26px;
+  /* font-size: 26px; */
+  color: inherit;
 }
 .font-accent {
   font-size: 46px;
@@ -18,19 +20,25 @@ h1 {
   text-align: center;
   text-transform: capitalize;
 }
+.article{
+  /* font-size: 44px; */
+  color: chocolate;
+  border: 5px solid red;
+}
 .subtitle {
-  font-size: 36px;
+  font-size: initial;
   text-align: right;
   text-decoration: dotted red overline 0.5em;
 }
 p {
-  font-size: 24px;
+  /* font-size: 0.95em; */
   font-weight: 700;
   font-style: italic;
   font-family: "Lora", serif;
   line-height: 1.3em;
   text-align: justify;
   text-indent: 3em;
+  /* border:inherit; */
 }
 .cicle{
   border-radius: 50%;
