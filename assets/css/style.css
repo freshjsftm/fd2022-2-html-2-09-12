@@ -1,0 +1,45 @@
+body {
+  background-color: aquamarine;
+  font-family: Arial, Helvetica, sans-serif;
+}
+a {
+  font-size: 26px;
+}
+.font-accent {
+  font-size: 46px;
+  font-family: "Rubik Gemstones", cursive;
+  background-color:yellow;
+}
+a.logo {
+  text-transform: uppercase;
+  text-decoration: none;
+}
+h1 {
+  text-align: center;
+  text-transform: capitalize;
+}
+.subtitle {
+  font-size: 36px;
+  text-align: right;
+  text-decoration: dotted red overline 0.5em;
+}
+p {
+  font-size: 24px;
+  font-weight: 700;
+  font-style: italic;
+  font-family: "Lora", serif;
+  line-height: 1.3em;
+  text-align: justify;
+  text-indent: 3em;
+}
+.cicle{
+  border-radius: 50%;
+}
+.btn {
+  text-decoration: none;
+  /* border-color: red;
+  border-style: solid;
+  border-width: 5px; */
+  border: 5px solid red;
+
+}
