@@ -1,20 +1,19 @@
-body{
-  background-color: #222222;
-  color: #aaaaaa;
-  /* font-size: 0; */
+.wrapping-img {
+  width: 50%;
+  border: 5px double #333;
+  margin: auto;
+  text-align: center;
 }
-p{
-  /* font-size: initial; */
-}
-div{
+figure {
   display: inline-block;
+}
+img {
+  width: 250px;
+  height: 250px;
+  border: inherit;
 
-  width: 33.33%;
-  padding: 10px;
-  border: 10px solid teal;
-
-  box-sizing: border-box;
-
-  /* font-size: initial; */
-
+  border-radius: 50%;
+  
+  object-fit: cover;
+  object-position: top right;
 }
