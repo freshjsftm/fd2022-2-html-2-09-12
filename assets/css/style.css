@@ -1,19 +1,21 @@
-.wrapping-img {
-  width: 50%;
-  border: 5px double #333;
+table{
+  width: 80%;
+  border: 3px solid red;
+  border-collapse: collapse;
   margin: auto;
-  text-align: center;
 }
-figure {
-  display: inline-block;
+th, td{
+  /* width: 20%; */
+  padding: 0.5em;
+  border: 3px solid green;
+  vertical-align: bottom;
 }
-img {
-  width: 250px;
-  height: 250px;
-  border: inherit;
-
-  border-radius: 50%;
-  
-  object-fit: cover;
-  object-position: top right;
+.size500{
+  width: 40%;
+}
+.size{
+  width: 15%;
+}
+.aling-right{
+  text-align: right;
 }

@@ -18,17 +18,56 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <section class="wrapping-img">
-      <h2>Gallery</h2>
-      <!-- <figure>
-        <img src="./assets/images/2808946.png" alt="Picture" />
-        <figcaption>Picture</figcaption>
-      </figure> -->
-      <img src="./assets/images/2808946.png" alt="pic" />
-      <img src="./assets/images/Cat_August_2010-4.jpg" alt="pic" />
-      <img src="./assets/images/Cat_November_2010-1a.jpg" alt="pic" />
-      <img src="./assets/images/pexels-fabian-wiktor-994605.jpg" alt="pic" />
-    </section>
 
+    <table>
+      <caption>Title table</caption>
+      <thead>
+        <tr>
+          <th class="size500">title column 1</th>
+          <th class="size">title column 2</th>
+          <th class="size">title column 3</th>
+          <th class="size">title column 4</th>
+          <th class="size">title column 5</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="2" rowspan="2">text 1</td>
+          <!-- <td>text 2</td> -->
+          <td>text 3</td>
+          <td rowspan="3">text 4</td>
+          <td>text 5</td>
+        </tr>
+        <tr>
+          <!-- <td>text 1</td>
+          <td>text 2</td> -->
+          <td>text 3</td>
+          <!-- <td>text 4</td> -->
+          <td>text 5</td>
+        </tr>
+        <tr>
+          <td>text 1</td>
+          <td>text 2</td>
+          <td>text 3 Lorem ipsum</td>
+          <!-- <td>text 4</td> -->
+          <td>text 5</td>
+        </tr>
+        <tr>
+          <td>text 1</td>
+          <td>text 2</td>
+          <td>text 3</td>
+          <td>text 4</td>
+          <td>text 5</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>total 1</td>
+
+          <td colspan="4" class="aling-right">total 5</td>
+        </tr>
+      </tfoot>
+    </table>
+    <!-- <span>line element</span> -->
   </body>
 </html>
