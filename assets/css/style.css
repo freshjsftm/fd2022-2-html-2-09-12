@@ -1,20 +1,26 @@
+:root {
+  font-size: 30px;
+}
 /*універсальний селектор - усі елементи*/
-*{
+* {
   box-sizing: border-box;
 }
+/* *:hover{
+  color: yellow;
+} */
 
 /* селектор потомків */
-.section div{
+.section div {
   border: 5px solid green;
 }
 
 /* селектор дочірних*/
-.section>div{
+.section > div {
   border: 5px solid red;
 }
 
 /*селектор сусіднього*/
-.section p+div{
+.section p + div {
   background-color: pink;
 }
 /* div{
@@ -22,6 +28,69 @@
 } */
 
 /*селектор родичів (братній) */
-p~div{
-  background-color:fuchsia;
+p ~ div {
+  background-color: fuchsia;
+}
+
+.inner-container:hover {
+  background-color: teal;
+  /* cursor: pointer; */
+}
+p {
+  color: pink;
+}
+
+a {
+  color: inherit;
+}
+a:link {
+  /*невідвідуване*/
+  background-color: lightcoral;
+}
+a:visited {
+  /*відвідуване*/
+  background-color: violet;
+}
+a:hover {
+  text-decoration: none;
+  background-color: yellow;
+}
+a:focus,
+blockquote:focus {
+  border: 7px double red;
+  outline: none;
+}
+
+a:active {
+  /*натиснули лівою кнопкою і утримуємо*/
+  background-color: aqua;
+}
+
+div > div:not(.inner-container) {
+  font-style: italic;
+}
+
+.btn:hover:not(a) {
+  background-color: darkorange;
+}
+
+
+/* 
+.main-navigation__list>li:first-child,
+.main-navigation__list>li:last-child{
+  list-style: none;
+}
+
+.main-navigation__list>li:nth-child(5){
+  font-size: 2em;
+}
+
+.main-navigation__list>li:nth-child(even){
+  font-style: oblique;
+  background-color: wheat;
+} */
+
+.main-navigation__list>li:nth-child(3n+5){
+  font-style: oblique;
+  background-color: wheat;
 }
