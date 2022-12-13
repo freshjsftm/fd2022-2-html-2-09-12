@@ -1,21 +1,27 @@
-table{
-  width: 80%;
-  border: 3px solid red;
-  border-collapse: collapse;
-  margin: auto;
+/*універсальний селектор - усі елементи*/
+*{
+  box-sizing: border-box;
 }
-th, td{
-  /* width: 20%; */
-  padding: 0.5em;
-  border: 3px solid green;
-  vertical-align: bottom;
+
+/* селектор потомків */
+.section div{
+  border: 5px solid green;
 }
-.size500{
-  width: 40%;
+
+/* селектор дочірних*/
+.section>div{
+  border: 5px solid red;
 }
-.size{
-  width: 15%;
+
+/*селектор сусіднього*/
+.section p+div{
+  background-color: pink;
 }
-.aling-right{
-  text-align: right;
+/* div{
+  background-color: lime;
+} */
+
+/*селектор родичів (братній) */
+p~div{
+  background-color:fuchsia;
 }
