@@ -1,96 +1,26 @@
-:root {
-  font-size: 30px;
+table {
+  width: 80%;
+  margin: auto;
+  border-collapse: collapse;
 }
-/*універсальний селектор - усі елементи*/
-* {
-  box-sizing: border-box;
+th, td{
+  padding: 1em;
 }
-/* *:hover{
-  color: yellow;
-} */
-
-/* селектор потомків */
-.section div {
-  border: 5px solid green;
+thead > tr > th:first-child {
+  border-radius: 15px 0 0 0;
+  background-color: #7987ac;
 }
-
-/* селектор дочірних*/
-.section > div {
-  border: 5px solid red;
+thead > tr > th:nth-child(2) {
+  background-color: #4f628d;
 }
-
-/*селектор сусіднього*/
-.section p + div {
-  background-color: pink;
+thead > tr > th:last-child {
+  border-radius: 0 15px 0 0;
+  background-color: #7987ac;
 }
-/* div{
-  background-color: lime;
-} */
-
-/*селектор родичів (братній) */
-p ~ div {
-  background-color: fuchsia;
+tbody > tr:nth-child(odd) > td:nth-child(odd),
+tfoot > tr:nth-child(odd) > th:nth-child(odd) {
+  background-color: #dbdbdb;
 }
-
-.inner-container:hover {
-  background-color: teal;
-  /* cursor: pointer; */
-}
-p {
-  color: pink;
-}
-
-a {
-  color: inherit;
-}
-a:link {
-  /*невідвідуване*/
-  background-color: lightcoral;
-}
-a:visited {
-  /*відвідуване*/
-  background-color: violet;
-}
-a:hover {
-  text-decoration: none;
-  background-color: yellow;
-}
-a:focus,
-blockquote:focus {
-  border: 7px double red;
-  outline: none;
-}
-
-a:active {
-  /*натиснули лівою кнопкою і утримуємо*/
-  background-color: aqua;
-}
-
-div > div:not(.inner-container) {
-  font-style: italic;
-}
-
-.btn:hover:not(a) {
-  background-color: darkorange;
-}
-
-
-/* 
-.main-navigation__list>li:first-child,
-.main-navigation__list>li:last-child{
-  list-style: none;
-}
-
-.main-navigation__list>li:nth-child(5){
-  font-size: 2em;
-}
-
-.main-navigation__list>li:nth-child(even){
-  font-style: oblique;
-  background-color: wheat;
-} */
-
-.main-navigation__list>li:nth-child(3n+5){
-  font-style: oblique;
-  background-color: wheat;
+tbody > tr:nth-child(even) > td:nth-child(odd) {
+  background-color: #ececec;
 }
