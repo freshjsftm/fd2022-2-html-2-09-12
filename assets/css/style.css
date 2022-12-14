@@ -1,40 +1,67 @@
-*{
-  box-sizing:border-box;
+* {
   margin: 0;
+  box-sizing: border-box;
 }
-html{
-  height: 10000px;
+html {
+  height: 300vh;
 }
-div{
-  border: 2px solid red;
-}
-.wrapper{
-  /* min-width: 300px; */
-  width: 100%;
-  /* max-width: 900px; */
-  /* min-height: 36px; */
-  height: 100vh;
-  /* max-height: 200px; */
-  margin: auto;
-  overflow-y: scroll;
-
-  background-color: rgb(63,94,251);
-  background-image: radial-gradient(circle, rgba(63,94,251,1) 36%, rgba(131,85,199,1) 36%, rgba(252,70,107,1) 100%), url(./../images/Cat_August_2010-4.jpg);
-  
-  /* background-image: url(./../images/Cat_August_2010-4.jpg); */
-  background-size: 100px 100px, cover;
-  background-position: top right;
-  background-repeat: repeat-x, no-repeat ;
-
-}
-.inner-block{
-  width: 90%;
-  height: 50%;
-  margin: 5%;
-  background-color:rgba(245, 222, 179, 0.481);
-  /* overflow: hidden; */
-  /* overflow-y: scroll; */
-}
-/* .inner-block>p{
-  width: 600px;
+/* div{
+  padding: 5vh;
 } */
+.wrapper {
+  width: 70vmin;
+  height: 70vmin;
+  margin: 5vh auto;
+
+  /* position: relative; */
+
+  background-color: aqua;
+}
+.inner-block {
+  width: 70%;
+  height: 70%;
+  margin: auto;
+
+  position: relative;
+
+  background-color: wheat;
+}
+.absolute {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  background-color: pink;
+}
+.block {
+  width: 100px;
+  height: 100px;
+  outline: 1px solid #222;
+  background-color: orange;
+}
+.margin-left {
+  margin-left: 30px;
+  margin-top: 20px;
+}
+.static {
+  position: static;
+  /* top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1; */
+}
+.relative {
+  position: relative;
+  top: 10%;
+  left: 10%;
+  z-index: 1;
+}
+.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 999;
+}
