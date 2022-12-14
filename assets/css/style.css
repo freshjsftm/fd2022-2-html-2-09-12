@@ -1,29 +1,40 @@
 *{
-  box-sizing: border-box;
+  box-sizing:border-box;
+  margin: 0;
 }
-table {
+html{
+  height: 10000px;
+}
+div{
+  border: 2px solid red;
+}
+.wrapper{
+  /* min-width: 300px; */
+  width: 100%;
+  /* max-width: 900px; */
+  /* min-height: 36px; */
+  height: 100vh;
+  /* max-height: 200px; */
   margin: auto;
-  border-collapse: collapse;
-}
-thead, tbody, tfoot{
-  display: block;
-}
-tbody{
-  height: 200px;
   overflow-y: scroll;
-}
-th,td{
-  width: 160px;
-  padding: 0.5em; 
-}
-th:nth-child(even),
-tr:nth-child(odd)>td:nth-child(odd),
-tr:nth-child(even)>td:nth-child(even){
-background-color: #aaa;
-}
-th:nth-child(odd),
-tr:nth-child(odd)>td:nth-child(even),
-tr:nth-child(even)>td:nth-child(odd){
-background-color: #ccc;
-}
 
+  background-color: rgb(63,94,251);
+  background-image: radial-gradient(circle, rgba(63,94,251,1) 36%, rgba(131,85,199,1) 36%, rgba(252,70,107,1) 100%), url(./../images/Cat_August_2010-4.jpg);
+  
+  /* background-image: url(./../images/Cat_August_2010-4.jpg); */
+  background-size: 100px 100px, cover;
+  background-position: top right;
+  background-repeat: repeat-x, no-repeat ;
+
+}
+.inner-block{
+  width: 90%;
+  height: 50%;
+  margin: 5%;
+  background-color:rgba(245, 222, 179, 0.481);
+  /* overflow: hidden; */
+  /* overflow-y: scroll; */
+}
+/* .inner-block>p{
+  width: 600px;
+} */
