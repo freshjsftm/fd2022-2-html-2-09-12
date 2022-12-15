@@ -33,61 +33,42 @@ main {
   width: 5%;
   position: absolute;
   top:47.5%;
+  opacity: 0;
+  transition: opacity 1s;
 }
 .slider::after{
   right: 0;
   /* transform: rotate(180deg); */
   transform: scaleX(-1);
 }
-.slider::before{}
-
-.heading{
-  width: 50vw;
-  background-color :pink;
-  margin: 0;
-
-  position: relative;
-
-  text-align: center;
-  text-transform: capitalize;
+/* .slider::before{} */
+.slider:hover::after,
+.slider:hover::before{
+  opacity: 0.5;
 }
-.heading::after{
-  content: url(./../icons/star-circle.svg);
-  display: inline-block;
-  width: 1rem;
-  background-color: fuchsia;
-}
-/* .heading:hover::after{
-  content: '\275E';
-} */
-/* .heading::after{
-  content: '\275D';
-  display: block;
-  width: 20%;
-  margin: auto;
-  background-color: yellow;
 
-  position: absolute;
-  top: 0%;
-  left: 0%;
 
-  color:red;
-  font-size: 3rem;
+.block{
+  width: 10%;
+  height: 50px;
+  margin-bottom: 5px;
+  background-color: pink;
+  transition: all 1s ;
 }
-.heading::before{
-  content: '!';
-  display: inline-block;
-  width: 20%;
-  margin: auto;
-  background-color: yellow;
-  color:red;
-} */
-
-/* .btn::after{
-  content: '!';
-  color:red;
+.wrapper:hover>.block{
+  width: 100%;
+  background-color: blue;
+  /* transition: all 4s; */
 }
-.btn::before{
-  content: '!';
-  color:red;
-} */
+.ease{
+  transition-timing-function: ease;
+}
+.ease-in{
+  transition-timing-function: ease-in;
+}
+.ease-out{
+  transition-timing-function: ease-out;
+}
+.linear{
+  transition-timing-function: linear;
+}
