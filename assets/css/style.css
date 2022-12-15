@@ -21,54 +21,14 @@ ul {
 main {
   margin: 5vmin;
 }
-
-.slider{
-  position: relative;
+.user-card{
+  width: 50%;
+  margin: auto;
+  text-align: center;
 }
-.slider::after,
-.slider::before{
-  content: url(./../icons/arrow-left-circle.svg);
-  display: block;
-  min-width: 15px;
-  width: 5%;
-  position: absolute;
-  top:47.5%;
-  opacity: 0;
-  transition: opacity 1s;
-}
-.slider::after{
-  right: 0;
-  /* transform: rotate(180deg); */
-  transform: scaleX(-1);
-}
-/* .slider::before{} */
-.slider:hover::after,
-.slider:hover::before{
-  opacity: 0.5;
-}
-
-
-.block{
-  width: 10%;
-  height: 50px;
-  margin-bottom: 5px;
-  background-color: pink;
-  transition: all 1s ;
-}
-.wrapper:hover>.block{
-  width: 100%;
-  background-color: blue;
-  /* transition: all 4s; */
-}
-.ease{
-  transition-timing-function: ease;
-}
-.ease-in{
-  transition-timing-function: ease-in;
-}
-.ease-out{
-  transition-timing-function: ease-out;
-}
-.linear{
-  transition-timing-function: linear;
+.user-card__img{
+  height: 200px;
+  clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+  object-fit: cover;
+  object-position: 0 -40px;
 }
