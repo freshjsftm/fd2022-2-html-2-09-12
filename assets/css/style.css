@@ -44,16 +44,20 @@ ul{
   right: 0;
 }
 .main-navigate__item:hover{
+  max-height: 65px;
   background-color: rgb(0, 52, 52);
 }
 .main-navigate__item:hover>.main-navigate__list__sublist{
   display: block;
+  
 }
 .main-navigate__item__subitem{
   display: block;
 }
 .main-navigate__item:hover>.main-navigate__list__sublist__last{
-  display:;
+  display: block;
   position: relative;
-  left: 180px;
+  left: 178px;
+  top: -63px;
 }
+
